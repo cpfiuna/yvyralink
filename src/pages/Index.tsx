@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
-import { FaXTwitter, FaGithub, FaInstagram, FaYoutube, FaLinkedin, FaDiscord, FaEnvelope, FaUserPlus, FaEllipsisVertical } from 'react-icons/fa6';
+import { FaXTwitter, FaGithub, FaInstagram, FaYoutube, FaLinkedin, FaDiscord, FaEnvelope, FaUserPlus, FaRegHeart} from 'react-icons/fa6';
+import { CiHeart } from "react-icons/ci";
 import { FaDesktop} from 'react-icons/fa';
 import { HiMiniEllipsisVertical } from "react-icons/hi2";
 import profileAvatar from "@/assets/profile-avatar.webp";
@@ -223,7 +224,12 @@ const Index = () => {
 
         {/* Footer */}
         <div className="text-center mt-12 text-sm text-[#94A3B8]">
-          <p>Desarrollado con el 𖹭 por el <a href="https://cpfiuna.io" target="_blank" rel="noopener noreferrer" className="whitespace-nowrap hover:text-foreground transition-colors">Club de Programación FIUNA</a></p>
+          <p>
+            Desarrollado con
+            <FaRegHeart className="inline w-3 h-4 mx-1 align-text-bottom" aria-hidden="true" />
+            <span className="sr-only">corazón</span>
+            por el <a href="https://cpfiuna.io" target="_blank" rel="noopener noreferrer" className="whitespace-nowrap hover:text-foreground transition-colors">Club de Programación FIUNA</a>
+          </p>
         </div>
       </div>
     </div>

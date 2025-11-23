@@ -1,4 +1,4 @@
-# Yvyralink
+# Yvyralink - Linktree humilde
 
 <div align="center">
 
@@ -8,7 +8,7 @@
 
 ### ¿Qué gua'u es esto?
 
-Yvyralink _(Cariñosamente Linktreen't)_ es un clon de Linktree _(de escasos recursos)_ desarrollado por el **Club de Programación FIUNA**. 
+Yvyralink _(cariñosamente Linktreen't)_ es un clon de Linktree _(de escasos recursos)_ desarrollado por el **Club de Programación FIUNA**. 
 
 Su propósito es ofrecer un lugar claro y controlado donde centralizar enlaces importantes del club (formularios, Discord, GitHub, redes sociales, etc.).
 
@@ -27,12 +27,12 @@ Este clon elimina esa ambigüedad: los enlaces personalizados llevan directament
 - Iconos sociales estilizados y ordenables según la estrategia del club.
 - Fácil personalización desde `src/pages/Index.tsx`.
 
-## Estructura relevante
+## Estructura
 
 - `src/pages/Index.tsx`: archivo principal donde se definen `socialLinks` y `links` y donde se encuentran los handlers de copia y estilos.
 - `src/index.css`, `tailwind.config.ts`: configuración y estilos globales.
 
-## Ejecutar en desarrollo
+## Ejecutar
 
 Instalá las dependencias y ejecutá el servidor de desarrollo:
 
@@ -43,7 +43,7 @@ npm run dev
 
 Abrí `http://localhost:5173` (o el puerto que indique Vite) en tu navegador.
 
-## Construir para producción
+## Construir
 
 ```powershell
 npm run build

@@ -225,7 +225,7 @@ const Index = () => {
         {/* Footer */}
         <div className="text-center mt-12 text-sm text-[#94A3B8]">
           <p>
-            Desarrollado con
+            Desarrollado con el
             <FaRegHeart className="inline w-3 h-4 mx-1 align-text-bottom" aria-hidden="true" />
             <span className="sr-only">corazón</span>
             por el <a href="https://cpfiuna.io" target="_blank" rel="noopener noreferrer" className="whitespace-nowrap hover:text-foreground transition-colors">Club de Programación FIUNA</a>

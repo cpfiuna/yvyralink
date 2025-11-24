@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="public/cpf-yvyralink-meme.png" alt="Yvyralink" style="width:60%;height:auto;display:block;margin:0 auto;" />
+<img src="https://drive.google.com/uc?export=view&id=1Xeh8QXsF7RsnKm6STWHAT_PkAg-qd7Xr" alt="Yvyralink" style="width:60%;height:auto;display:block;margin:0 auto;" />
 
 </div>
 

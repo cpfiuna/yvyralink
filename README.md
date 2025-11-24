@@ -27,10 +27,13 @@ Este clon elimina esa ambigüedad: los enlaces personalizados llevan directament
 - Iconos sociales estilizados y ordenables según la estrategia del club.
 - Fácil personalización desde `src/pages/Index.tsx`.
 
-## Estructura
+## Agregar o quitar links
 
-- `src/pages/Index.tsx`: archivo principal donde se definen `socialLinks` y `links` y donde se encuentran los handlers de copia y estilos.
-- `src/index.css`, `tailwind.config.ts`: configuración y estilos globales.
+- `src/pages/Index.tsx`: archivo principal donde se definen los arrays de `socialLinks` y `links` y donde se encuentran los handlers de copia y estilos.
+
+En este archivo simplemente hay que agregar un enlace al array de enlaces o de ser necesario un enlace al array de redes sociales.
+
+Cuidando siempre de importar los íconos necesarios y/o eliminar los que están en desuso.
 
 ## Ejecutar
 
@@ -56,17 +59,41 @@ npm run preview
 2. Haz un fork y crea una rama con cambios pequeños y claros.
 3. Envía un Pull Request con descripción y pruebas si aplica.
 
-## Contacto
+## Visitanos
 
-<div align="center">
-
-  [![Instagram](https://img.shields.io/badge/Instagram-cpf?style=plastic&logo=instagram&logoColor=%23fafafa&labelColor=%23FF0069&color=%23FF0069)](https://instagram.com/cpfiuna)
-  [![X](https://img.shields.io/badge/X-cpf?style=plastic&logo=x&logoColor=%23fafafa&labelColor=%23000000&color=%23000000)](https://x.com/cpfiuna)
-  [![Discord](https://img.shields.io/badge/Discord-cpf?style=plastic&logo=discord&logoColor=%23fafafa&labelColor=%235865F2&color=%235865F2)](https://discord.gg/UtRpKw2ay4)
-  [![YouTube](https://img.shields.io/badge/YouTube-cpf?style=plastic&logo=youtube&logoColor=%23fafafa&labelColor=%23FF0000&color=%23FF0000)](https://youtube.com/@cpfiuna)
-  [![Linktree](https://img.shields.io/badge/Linktree-cpf?style=plastic&logo=linktree&logoColor=%23fafafa&labelColor=%2343E55E&color=%2343E55E)](https://linktr.ee/cpfiuna)
-
-  Visitá nuestra [página web :)](https://cpfiuna.io)
-
-</div>
-
+<head>
+  <style>
+    /* Minimal, neutral styling for embedding (keeps background transparent) */
+    :root{--gap:10px}
+    html,body{height:100%;margin:0;background:transparent}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:inherit}
+    .cpf-badges{display:flex;flex-wrap:wrap;gap:var(--gap);align-items:center;justify-content:center;padding:8px}
+    .cpf-badges a{display:inline-block}
+    .cpf-badges img{display:block;border:0;height:auto}
+    /* Keep layout compact when embedded in small containers */
+    @media (max-width:420px){.cpf-badges{gap:8px}}
+  </style>
+  </head>
+  <body>
+    <div class="cpf-badges" role="group" aria-label="CPF social links">
+      <a href="https://instagram.com/cpfiuna" target="_blank" rel="noopener noreferrer" title="Instagram — cpf">
+        <img src="https://img.shields.io/badge/Instagram-cpf?style=plastic&logo=instagram&logoColor=%23fafafa&labelColor=%23FF0069&color=%23FF0069" alt="Instagram: cpf" />
+      </a>
+      <a href="https://x.com/cpfiuna" target="_blank" rel="noopener noreferrer" title="X — cpf">
+        <img src="https://img.shields.io/badge/X-cpf?style=plastic&logo=x&logoColor=%23fafafa&labelColor=%23000000&color=%23000000" alt="X: cpf" />
+      </a>
+      <a href="https://discord.gg/UtRpKw2ay4" target="_blank" rel="noopener noreferrer" title="Discord — cpf">
+        <img src="https://img.shields.io/badge/Discord-cpf?style=plastic&logo=discord&logoColor=%23fafafa&labelColor=%235865F2&color=%235865F2" alt="Discord: cpf" />
+      </a>
+      <a href="https://youtube.com/@cpfiuna" target="_blank" rel="noopener noreferrer" title="YouTube — cpf">
+        <img src="https://img.shields.io/badge/YouTube-cpf?style=plastic&logo=youtube&logoColor=%23fafafa&labelColor=%23FF0000&color=%23FF0000" alt="YouTube: cpf" />
+      </a>
+      <a href="https://www.linkedin.com/company/cpfiuna" target="_blank" rel="noopener noreferrer" title="LinkedIn — cpf">
+        <img src="https://img.shields.io/badge/LinkedIn-cpf?style=plastic&logo=inspire&logoColor=%23FAFAFA&labelColor=%230A66C2&color=%230A66C2" alt="LinkedIn: cpf" />
+      </a>
+    </div>
+    <div style="width:100%;text-align:center;margin-top:8px;">
+      Visitá nuestra <a href="https://cpfiuna.io" target="_blank" rel="noopener noreferrer" title="Página web — cpf">página web</a> :)
+    </div>
+    
+  </body>
